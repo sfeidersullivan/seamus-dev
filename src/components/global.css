@@ -1,0 +1,102 @@
+:root {
+  --backColor: #272727;
+  --textColor: white;
+}
+
+html, body, #___gatsby, #gatsby-focus-wrapper, .main {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: var(--backColor);
+  overflow: hidden;
+  font-family: avenir next, avenir, serif;
+}
+
+a {
+  font-size: 1em;
+  color: var(--textColor);
+  font-weight: 600;
+  pointer-events: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.download-resume {
+  padding: 0.5em;
+}
+
+.nav-bar {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right:0;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.nav-bar > a {
+  padding: 1em;
+}
+
+.header {
+  position: absolute;
+  color: var(--textColor);
+  pointer-events: none;
+  bottom: 20%;
+  left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 4em;
+  line-height: 1em;
+  overflow: hidden;
+  font-family: Georgia, serif;
+}
+
+.modal {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  pointer-events: none;
+}
+
+.resume {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* so so small */
+@media screen and (max-width: 320px){
+  .header {
+    font-size: 2em;
+    left: 0.3em;
+    padding-right: 0.3em;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .header {
+    font-size: 5em;
+    left: 1em;
+    top: 40%;
+    bottom: auto;
+    padding-right: 1em;
+  }
+
+  .resume {
+    max-width: 85%;
+    max-height: 85%;
+  }
+
+  .nav-bar {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
