@@ -2,12 +2,12 @@
 
 import React, { useState, useRef } from 'react';
 import { MeshLine, MeshLineMaterial } from 'three.meshline';
-import { extend, Canvas, useFrame, useThree } from 'react-three-fiber';
+import { extend, useFrame } from 'react-three-fiber';
 import * as THREE from 'three';
 
 extend({ MeshLine, MeshLineMaterial })
-const colors3 = ['#f8e9a1', '#f76c6c', '#a8d0e6', '#374785', '#24305e'];
-const colorsMinimal = ['#959595', '#e2e0d4', '#cebeb9', '#e7cac2', '#e8e8e8'];
+// const colors3 = ['#f8e9a1', '#f76c6c', '#a8d0e6', '#374785', '#24305e'];
+// const colorsMinimal = ['#959595', '#e2e0d4', '#cebeb9', '#e7cac2', '#e8e8e8'];
 const colors = ['lightpink', 'lightblue', 'lightgray'];
 
 const Fatline = () => {

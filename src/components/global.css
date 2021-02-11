@@ -27,10 +27,8 @@ a {
 
 .nav-bar {
   position: absolute;
-  bottom: 0;
-  top: 0;
-  right:0;
-  padding: 2em;
+  top: 1em;
+  right: 1em;
   display: flex;
   flex-direction: column;
   pointer-events: none;
@@ -51,6 +49,14 @@ a {
   line-height: 1em;
   overflow: hidden;
   font-family: Georgia, serif;
+}
+
+.footer {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  pointer-events: none;
+  font-size: 0.75em;
 }
 
 .modal {
@@ -92,10 +98,8 @@ a {
   }
 
   .nav-bar {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: auto;
+    top: 2em;
+    right: 2em;
     flex-direction: row;
     justify-content: flex-end;
   }
